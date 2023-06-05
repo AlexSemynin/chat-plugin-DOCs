@@ -1,0 +1,42 @@
+.message-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f8fa;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.message-container.current-user {
+  align-self: flex-end;
+  background-color: #dcf8c6;
+}
+
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.author-name {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.date {
+  color: #999;
+  font-size: 0.8rem;
+}
+
+.message-body {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  line-height: 1.4;
+}
+
+.current-date {
+  align-self: flex-end;
+  color: #999;
+  font-size: 0.8rem;
+}
