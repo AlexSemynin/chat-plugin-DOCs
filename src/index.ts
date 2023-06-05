@@ -1,5 +1,5 @@
-import { Chat, IMessagesCollection, ICollection } from './chat/ChatContainer';
+import { Chat, IMessagesCollection, IMessageItem } from './chat/ChatContainer';
 
 export { Chat as DOCsChatComponentWrapper };
 export { IMessagesCollection as IDOCsMessagesCollection }
-export { ICollection as IMessageItem }
+export { IMessageItem }

@@ -4,11 +4,11 @@ import { IMessageProps, Message } from '../message/Message';
 
 
 export interface IMessagesCollection {
-  collection: ICollection;
+  collection: IMessageItem[];
   currentUserName: string; //Pick<IMessageProps, 'currentUserName'>;
 }
 
-export type ICollection = Omit<IMessageProps, 'currentUserName'>[];
+export type IMessageItem = Omit<IMessageProps, 'currentUserName'>;
 
 export const Chat: React.FC<IMessagesCollection> = ({collection, currentUserName}) => {
 

@@ -1,6 +1,6 @@
 {
   "name": "docs-chat-component",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "[Отображение чата по модели данных]",
   "main": "dist/index.js",
   "dependencies": {
