@@ -15,9 +15,8 @@ export interface IMessageProps {
 
 export const Message: React.FC<IMessageProps> = ({ authorName, text, date, keyId, currentUserName, nextUserName }) => {
   const isCurrentUser = authorName === currentUserName;
-  
   const isSameUser = nextUserName === authorName;
-  const sanitizedText = DOMPurify.sanitize(text, { ALLOWED_TAGS: ['b', 'i', 'em', 'strong', 'img', 'div'] });
+  const sanitizedText = DOMPurify.sanitize(text, { FORBID_TAGS: ['script'] });
 
   return (
     <div className={`message-container ${isCurrentUser ? 'current-user' : ''} ${isSameUser ? 'same-user': ''}`} key={keyId}>
