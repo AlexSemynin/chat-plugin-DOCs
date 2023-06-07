@@ -12,12 +12,32 @@
 .message-container.current-user {
   align-self: flex-end;
   background-color: #dcf8c6;
-  margin-left: 2em;
+  margin-left: 2em; /* todo: вынести в var 2em*/
   margin-right: 0;
 }
 
 .message-container.same-user {
   margin-bottom: 3px;
+}
+
+.message-container.display-date {
+  margin-bottom: 5rem;
+  position: relative;
+}
+.message-container.display-date::after {
+  content: attr(data-date);
+  position: absolute;
+  left: calc( 50% + 1em );
+  transform: translate(-50%, 1.5rem);
+  top: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1px 7px;
+  color: #858585;
+}
+
+.message-container.display-date.current-user::after {
+  left: calc( 50% - 1em ); /* todo: вынести в var 2em*/
 }
 
 .message-header {

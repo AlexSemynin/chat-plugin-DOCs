@@ -33,6 +33,7 @@ export const Chat: React.FC<IMessagesCollection> = ({ collection, currentUserNam
             {...message}
             currentUserName={currentUserName}
             nextUserName={collection[index + 1]?.authorName}
+            nextMessageDate={collection[index + 1]?.date}
             key={message.keyId}
           />)
         })
