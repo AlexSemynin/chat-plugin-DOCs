@@ -1,8 +1,11 @@
 {
   "name": "docs-chat-component",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "[Отображение чата по модели данных]",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "ajv-formats": "^2.1.1",
     "css-minimizer-webpack-plugin": "^3.4.1",
